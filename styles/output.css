@@ -1,0 +1,99 @@
+html {
+  font-size: 62.5%;
+  /* Now 10px = 1rem! */ }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  /* px fallback */
+  font-size: 1.6rem;
+  /* default font-size for document */
+  line-height: 1.5;
+  /* a nice line-height */ }
+
+hr {
+  border-bottom: 1px solid #BAC8D5;
+  border-top: 1px solid #BAC8D5;
+  height: .4rem;
+  margin: 5rem 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  color: #935CE8; }
+
+a {
+  color: #935CE8;
+  text-decoration: underline; }
+  a:hover {
+    color: #5CABE8; }
+
+.btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: .8rem 1.6rem; }
+  .btn.btn-primary {
+    background: #935CE8;
+    border: 0; }
+    .btn.btn-primary:hover {
+      background: #5CABE8; }
+
+form .animate-input {
+  padding-top: 1rem;
+  position: relative; }
+  form .animate-input label {
+    background: #FFF;
+    position: absolute;
+    top: .2rem;
+    left: .7rem;
+    font-size: 1.2rem;
+    transition: all .2s;
+    cursor: text;
+    padding: 0 .5rem;
+    color: #333; }
+  form .animate-input input:placeholder-shown:not(:focus) + * {
+    position: absolute;
+    top: 3rem;
+    font-size: 1.6rem;
+    padding: 0; }
+  form .animate-input input.form-control {
+    border: 2px solid transparent;
+    border-bottom: 2px solid #BAC8D5;
+    font-size: 1.6rem;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 1.2rem 1rem 1rem; }
+  form .animate-input input:focus {
+    outline: none;
+    border: 2px solid #BAC8D5;
+    box-shadow: none; }
+form .custom-checkbox {
+  padding-left: 2.8rem; }
+  form .custom-checkbox .custom-control-label:before, form .custom-checkbox .custom-control-label:after {
+    left: -2.8rem;
+    top: .2rem;
+    height: 2rem;
+    width: 2rem; }
+  form .custom-checkbox .custom-control-label:before {
+    background: transparent;
+    border: 2px solid #BAC8D5; }
+  form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background: #935CE8;
+    border-radius: .25rem; }
+
+.login-container {
+  margin: auto;
+  max-width: 650px; }
+  .login-container #showPass {
+    position: absolute;
+    bottom: 1rem;
+    left: 0; }
+
+header.internal {
+  background-image: linear-gradient(90deg, #5CABE8 0%, #935CE8 100%); }
+
+.activities {
+  background: #EFF4F8; }
+
+/*# sourceMappingURL=output.css.map */
