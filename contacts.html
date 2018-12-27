@@ -36,15 +36,17 @@
   </nav>
   <main>
     <div class="fluid-container">
-      <div class="row no-gutters d-flex w-100 remainingvh">
-        <div class="col-md-6">
+      <div class="row no-gutters">
+        <div class="col-12">
           <div class="p-5 m-5">
-            <h2 class="text-center">Tasks</h2>
-          </div>
-        </div>
-        <div class="col-md-6 activities">
-          <div class="p-5 m-5">
-            <h2 class="text-center">Activity History</h2>
+            <h2>Contacts</h2>
+            <form>
+              <div class="animate-input search">
+                <input type="search" id="search" class="form-control" placeholder=" ">
+                <label for="search" class="input-text">Search Contacts...</label>
+              </div>
+            </form>
+            <ul id="contactList"></ul>
           </div>
         </div>
       </div>

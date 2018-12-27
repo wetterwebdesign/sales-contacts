@@ -30,18 +30,29 @@ a {
     color: #5CABE8; }
 
 .btn {
+  color: #935CE8 !important;
   text-decoration: none;
   font-size: 1.6rem;
   padding: .8rem 1.6rem; }
   .btn.btn-primary {
     background: #935CE8;
-    border: 0; }
+    border: 0;
+    color: #FFF !important; }
     .btn.btn-primary:hover {
       background: #5CABE8; }
 
 form .animate-input {
   padding-top: 1rem;
   position: relative; }
+  form .animate-input.search:after {
+    display: block;
+    position: absolute;
+    top: 2.2rem;
+    right: 2rem;
+    font-family: FontAwesome;
+    content: '\f002'; }
+  form .animate-input.search input.form-control {
+    padding-right: 4rem; }
   form .animate-input label {
     background: #FFF;
     position: absolute;
@@ -95,5 +106,100 @@ header.internal {
 
 .activities {
   background: #EFF4F8; }
+
+.remainingvh {
+  min-height: calc(100vh - 8.4rem); }
+
+body.popupmenu-open {
+  height: 100vh;
+  overflow: hidden; }
+
+#main-menu {
+  background: #333; }
+  #main-menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: auto;
+    margin: auto; }
+    #main-menu ul li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline; }
+      #main-menu ul li a {
+        background: transparent;
+        color: #FFF;
+        display: inline-block;
+        padding: 1.6rem 2rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .2s; }
+        #main-menu ul li a:hover {
+          background: #5CABE8; }
+      #main-menu ul li .popmenu {
+        display: none; }
+        #main-menu ul li .popmenu.display-menu {
+          background-image: linear-gradient(90deg, #5CABE8 0%, #935CE8 100%);
+          display: block;
+          font-size: 3rem;
+          line-height: 8rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          width: 100%;
+          z-index: 9999;
+          text-align: center;
+          opacity: 0.1; }
+          #main-menu ul li .popmenu.display-menu a, #main-menu ul li .popmenu.display-menu button {
+            background: transparent;
+            border: 1px solid #FFF;
+            border-radius: 50%;
+            color: #FFF;
+            height: 8rem;
+            width: 8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            padding: 0; }
+            #main-menu ul li .popmenu.display-menu a:hover, #main-menu ul li .popmenu.display-menu button:hover {
+              line-height: 9rem;
+              height: 9rem;
+              width: 9rem; }
+          #main-menu ul li .popmenu.display-menu a {
+            background: #FFF;
+            color: #935CE8; }
+            #main-menu ul li .popmenu.display-menu a:hover {
+              background: #935CE8;
+              color: #FFF;
+              border-color: #935CE8;
+              box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2); }
+            #main-menu ul li .popmenu.display-menu a:after {
+              display: block;
+              font-size: 1.2rem;
+              line-height: 2rem;
+              color: #FFF;
+              padding-top: 1rem; }
+          #main-menu ul li .popmenu.display-menu .overlay-close {
+            cursor: pointer;
+            margin-top: -10rem;
+            transition: all .2s; }
+            #main-menu ul li .popmenu.display-menu .overlay-close:hover {
+              background: #FFF;
+              color: #935CE8;
+              box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); }
+          #main-menu ul li .popmenu.display-menu .add-task {
+            margin-left: -10rem; }
+            #main-menu ul li .popmenu.display-menu .add-task:after {
+              content: 'Add Task'; }
+          #main-menu ul li .popmenu.display-menu .add-contact {
+            left: initial;
+            right: 50%;
+            margin-right: -10rem;
+            transform: translateY(-50%) translateX(50%); }
+            #main-menu ul li .popmenu.display-menu .add-contact:after {
+              content: 'Add Contact'; }
 
 /*# sourceMappingURL=output.css.map */

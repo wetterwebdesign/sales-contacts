@@ -45,6 +45,19 @@
     <p class="text-center"><a href="#">Sign Up</a></p>
   </div>
   </main>
-  <script src="scripts/scripts.js"></script>
+  <script>
+    // Change password field to text field
+    document.getElementById('showPass').addEventListener('click', function() {
+      const passInput = document.getElementById("pass");
+      const showPassText = document.getElementById('showPass');
+      if (passInput.type === "password") {
+        passInput.type = "text";
+        showPassText.textContent = 'Hide Password';
+      } else {
+        passInput.type = "password";
+        showPassText.textContent = 'Show Password';
+      }
+    })
+  </script>
 </body>
 </html>
