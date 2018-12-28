@@ -100,11 +100,13 @@ form {
       top:3rem;
       font-size:1.6rem;
       padding:0;
+      z-index: -1;
     }
 
     input {
       
       &.form-control {
+        background:transparent;
         border:2px solid transparent;
         border-bottom:2px solid $color-light-gray;
         font-size:1.6rem;
