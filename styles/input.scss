@@ -121,7 +121,7 @@ form {
     }
   }
 
-  .custom-checkbox {
+  .custom-checkbox, .custom-radio {
     padding-left:2.8rem;
 
     .custom-control-label {
@@ -145,6 +145,10 @@ form {
 
   }
 
+  .custom-radio .custom-control-input:checked~.custom-control-label::after {
+    border-radius: 5rem;
+  }
+
 }
 
 // Login page
@@ -162,6 +166,7 @@ form {
 // Internal Header
 header.internal {
   background-image:linear-gradient(90deg, #5CABE8 0%, #935CE8 100%);
+  color:#FFF;
 }
 
 // Activities
@@ -303,4 +308,34 @@ body.popupmenu-open {
       }
     }
   }
+}
+
+// Contact List
+
+ul#contactList {
+  margin:0;
+  padding:0;
+
+  li {
+    border-bottom: 1px solid $color-light-gray;
+    list-style: none;
+    padding:2rem;
+
+    em {
+      opacity: 0.5;
+    }
+  }
+
+  .headshot-small {
+    background:#333;
+    border-radius: 50%;
+    border:3px solid $color-purple;
+    height: 8rem;
+    width:8rem;
+    overflow: hidden;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 }

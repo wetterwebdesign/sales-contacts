@@ -79,19 +79,21 @@ form .animate-input {
     outline: none;
     border: 2px solid #BAC8D5;
     box-shadow: none; }
-form .custom-checkbox {
+form .custom-checkbox, form .custom-radio {
   padding-left: 2.8rem; }
-  form .custom-checkbox .custom-control-label:before, form .custom-checkbox .custom-control-label:after {
+  form .custom-checkbox .custom-control-label:before, form .custom-checkbox .custom-control-label:after, form .custom-radio .custom-control-label:before, form .custom-radio .custom-control-label:after {
     left: -2.8rem;
     top: .2rem;
     height: 2rem;
     width: 2rem; }
-  form .custom-checkbox .custom-control-label:before {
+  form .custom-checkbox .custom-control-label:before, form .custom-radio .custom-control-label:before {
     background: transparent;
     border: 2px solid #BAC8D5; }
-  form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after, form .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
     background: #935CE8;
     border-radius: .25rem; }
+form .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  border-radius: 5rem; }
 
 .login-container {
   margin: auto;
@@ -102,7 +104,8 @@ form .custom-checkbox {
     left: 0; }
 
 header.internal {
-  background-image: linear-gradient(90deg, #5CABE8 0%, #935CE8 100%); }
+  background-image: linear-gradient(90deg, #5CABE8 0%, #935CE8 100%);
+  color: #FFF; }
 
 .activities {
   background: #EFF4F8; }
@@ -201,5 +204,25 @@ body.popupmenu-open {
             transform: translateY(-50%) translateX(50%); }
             #main-menu ul li .popmenu.display-menu .add-contact:after {
               content: 'Add Contact'; }
+
+ul#contactList {
+  margin: 0;
+  padding: 0; }
+  ul#contactList li {
+    border-bottom: 1px solid #BAC8D5;
+    list-style: none;
+    padding: 2rem; }
+    ul#contactList li em {
+      opacity: 0.5; }
+  ul#contactList .headshot-small {
+    background: #333;
+    border-radius: 50%;
+    border: 3px solid #935CE8;
+    height: 8rem;
+    width: 8rem;
+    overflow: hidden;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat; }
 
 /*# sourceMappingURL=output.css.map */

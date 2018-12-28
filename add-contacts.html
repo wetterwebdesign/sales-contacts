@@ -11,16 +11,16 @@
   <title>Sales Contacts</title>
 </head>
 <body id="body">
-  <header class="py-5 internal">
+  <header class="p-5 internal">
     <div class="container-fluid">
-      something
+      <strong>SALES CONTACTS</strong>
     </div>
   </header>
   <nav id="main-menu">
     <ul>
       <li>
         <a id="addTask">
-          Add Task
+          Add
         </a>
         <div class="popmenu">
             <button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
@@ -35,53 +35,63 @@
     </ul>
   </nav>
   <main>
-    <div class="fluid-container">
+    <div class="container">
       <div class="row no-gutters">
         <div class="col-12">
           <div class="p-5 m-5">
-            <h2>Contacts</h2>
+            <h1>Add New Contact</h1>
             <form>
               <div class="row">
                 <div class="col-md-4">
                   <div class="animate-input">
-                    <input type="text" id="fname" class="form-control" placeholder=" ">
+                    <input type="text" id="fname" class="form-control" placeholder=" " required>
                     <label for="fname" class="input-text">First Name</label>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="animate-input">
-                    <input type="text" id="lname" class="form-control" placeholder=" ">
+                    <input type="text" id="lname" class="form-control" placeholder=" " required>
                     <label for="lname" class="input-text">Last Name</label>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="animate-input">
-                    <input type="email" id="email" class="form-control" placeholder=" ">
+                    <input type="email" id="email" class="form-control" placeholder=" " required>
                     <label for="email" class="input-text">Email Address</label>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="animate-input">
-                    <input type="text" id="company" class="form-control" placeholder=" ">
+                    <input type="text" id="company" class="form-control" placeholder=" " required>
                     <label for="company" class="input-text">Company</label>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="animate-input">
-                    <input type="text" id="title" class="form-control" placeholder=" ">
+                    <input type="text" id="title" class="form-control" placeholder=" " required>
                     <label for="title" class="input-text">Title</label>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="animate-input">
-                    <input type="tel" id="phone" class="form-control" placeholder=" ">
+                    <input type="tel" id="phone" class="form-control" placeholder=" " required>
                     <label for="phone" class="input-text">Phone</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="gender" class="mt-4">Gender</label><br>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="male" name="gender" value="male" class="custom-control-input" required>
+                    <label class="custom-control-label" for="male">Male</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="female" name="gender" value="female" class="custom-control-input" required>
+                    <label class="custom-control-label" for="female">Female</label>
                   </div>
                 </div>
               </div>
               <p class="mt-4 clearfix"><a class="btn btn-primary pull-right" id="saveContact">Save Contact</a> <a class="btn pull-left pl-0">Cancel</a></p>
             </form>
-            <ul id="contactList"></ul>
           </div>
         </div>
       </div>
